@@ -20,7 +20,67 @@
     top: 5vh;
 }
 
-.col-10 {
+/* main reale */
+#main {
     height: 90vh;
-    background-color: brown;
+}
+
+/* tutte le chat */
+#all_chats {
+    height: 90vh;
+}
+
+#user {
+    padding: 10px 5px;
+    background-color: #eaeaea;
+}
+
+.gray_icons {
+    color: gray;
+    text-decoration: none;
+}
+
+#all_chats img {
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.user_buttons a {
+    margin-right: 5px;
+}
+
+.notification_icon_background {
+    border-radius: 100%;
+    background-color: #f2fbff;
+    padding: 15px 14px;
+}
+
+#notifications {
+    background-color: #8edafc;
+    padding: 15px 14px;
+}
+
+#notifications i {
+    color: #8edafc;
+}
+
+#notifications div {
+    margin-left: 10px;
+}
+
+#notifications p {
+    margin: 0;
+}
+
+#search {
+    border: solid 3px #dbdbd2;
+    background-color: #dbdbd2;
+}
+
+
+
+#single_chat {
+    background-color: blue;
+    height: 90vh;
 }

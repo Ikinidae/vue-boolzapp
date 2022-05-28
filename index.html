@@ -27,8 +27,52 @@
                 <div class="col-1"></div>
                 
                 <!-- main reale -->
-                <div class="col-10">
+                <div id="main" class="col-10">
+                    <div class="row">
 
+                        <!-- colonna sx con elenco chat -->
+                        <div id="all_chats" class="col-4">
+                            <section id="user" class="d-flex flex-row justify-content-between">
+                                
+                                <!-- user -->
+                                <div id="logo">
+                                    <img src="img/meme_bambina_bionda.png" alt="icona">
+                                    <span>Federica Elia</span>
+                                </div>
+
+                                <div class="user_buttons">
+                                    <a href="" class="gray_icons">
+                                        <i class="fa-solid fa-circle-notch"></i>
+                                    </a>
+                                    <a href="" class="gray_icons">
+                                        <i class="fa-solid fa-message"></i>
+                                    </a>
+                                    <a href="" class="gray_icons">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>                                    </a>
+                                </div>
+                            </section>
+
+                            <!-- notifiche -->
+                            <section id="notifications" class="d-flex flex-row align-items-center">
+                                <i class="fa-solid fa-bell-slash notification_icon_background"></i>
+                                <div>
+                                    <p>Ricevi notifiche di nuovi messaggi</p>
+                                    <a href="">Attiva notifiche desktop</a>
+                                </div>
+                            </section>
+
+                            <!-- cerca -->
+                            <section id="search">
+                                <a href="" class="gray_icons">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                                <input type="text" placeholder="Cerca o inizia una nuova chat">
+                            </section>
+                        </div>
+
+                        <!-- colonna dx con chat aperta -->
+                        <div id="single_chat" class="col-8"></div>
+                    </div>
                 </div>
                 <div class="col-1"></div>
             </div>
