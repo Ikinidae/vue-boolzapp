@@ -28,11 +28,13 @@
 /* tutte le chat */
 #all_chats {
     height: 90vh;
+    background-color: brown;
 }
 
 #user {
     padding: 10px 5px;
     background-color: #eaeaea;
+    height: auto;
 }
 
 .gray_icons {
@@ -76,6 +78,26 @@
 #search {
     border: solid 3px #dbdbd2;
     background-color: #dbdbd2;
+}
+
+#chat_list {
+    background-color: #dbdbd2;
+}
+
+.chat {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#chat_list h5 {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+#chat_list p {
+    font-size: 14px;
+    color: gray;
 }
 
 

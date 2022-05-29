@@ -21,7 +21,7 @@
     </div>
 
     <!-- main -->
-    <main>
+    <main id="boolzapp">
         <div class="container">
             <div class="row">
                 <div class="col-1"></div>
@@ -32,10 +32,9 @@
 
                         <!-- colonna sx con elenco chat -->
                         <div id="all_chats" class="col-4">
-                            <section id="user" class="d-flex flex-row justify-content-between">
-                                
-                                <!-- user -->
-                                <div id="logo">
+
+                            <!-- user -->
+                            <section id="user" class="d-flex flex-row justify-content-between">                                                                <div id="logo">
                                     <img src="img/meme_bambina_bionda.png" alt="icona">
                                     <span>Federica Elia</span>
                                 </div>
@@ -68,6 +67,23 @@
                                 </a>
                                 <input type="text" placeholder="Cerca o inizia una nuova chat">
                             </section>
+
+                            <!-- elenco chat -->
+                            <section id="chat_list">
+                                <div class="chat d-flex flex-row align-items-start"
+                                v-for="(item,i) in contacts" :key="i">
+                                    <div class="d-flex flex-row">
+                                        <div>
+                                            <img :src="item.avatar" alt="avatar">
+                                        </div>                                        
+                                        <div>
+                                            <h5>{{item.name}}</h5>
+                                            <p>Ultimo messaggio inviato</p>
+                                        </div>
+                                    </div>
+                                    <p>12:00</p>
+                                </div>
+                            </section>
                         </div>
 
                         <!-- colonna dx con chat aperta -->
@@ -78,5 +94,8 @@
             </div>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
