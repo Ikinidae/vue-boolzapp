@@ -28,28 +28,31 @@
 /* tutte le chat */
 #all_chats {
     height: 90vh;
-    background-color: brown;
 }
 
 #user {
     padding: 10px 5px;
     background-color: #eaeaea;
-    height: auto;
+    border-right: solid 1px #b1b1b1;
+}
+
+#user div:first-child {
+    padding-left: 5px;
 }
 
 .gray_icons {
-    color: gray;
+    color: #b1b1b1;
     text-decoration: none;
 }
 
-#all_chats img {
+.avatar {
     width: 40px;
     border-radius: 100%;
     margin-right: 5px;
 }
 
 .user_buttons a {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .notification_icon_background {
@@ -75,13 +78,28 @@
     margin: 0;
 }
 
+#notifications a {
+    color: gray;
+    font-size: 13px;
+}
+
 #search {
-    border: solid 3px #dbdbd2;
-    background-color: #dbdbd2;
+    border: solid 3px #fafafa;
+    background-color: white;
+}
+
+#search a {
+    margin-right: 12px;
+}
+
+.input_width {
+    flex: 1;
 }
 
 #chat_list {
-    background-color: #dbdbd2;
+    background-color: white;
+    height: calc(100vh - 60px - 78px - 36px - 10vh);
+    overflow: scroll;
 }
 
 .chat {
@@ -101,8 +119,48 @@
 }
 
 
-
+/* chat singola a dx */
 #single_chat {
-    background-color: blue;
+    background-color: #eaeaea;
     height: 90vh;
+}
+
+#contact {
+    padding: 10px 10px;
+    background-color: #eaeaea;
+    border-left: solid 1px #b1b1b1;
+}
+
+.open_chat_contact {
+    margin-left: 10px;
+}
+
+.open_chat_contact p {
+    margin: 0;
+}
+
+.open_chat_contact p:last-child {
+    font-size: 11px;
+    color: gray;
+}
+
+#open_chat {
+    background-image: url(img/background.jpg);
+    height: calc(100vh - 10vh - 60.5px - 50px);
+}
+
+#write {
+    padding: 10px 20px;
+}
+
+#write a:first-child {
+    margin-right: 20px;
+}
+
+#write a:last-child {
+    margin-left: 20px;
+}
+
+#write i {
+    font-size: 20px;
 }

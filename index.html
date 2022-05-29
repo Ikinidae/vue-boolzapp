@@ -32,62 +32,109 @@
 
                         <!-- colonna sx con elenco chat -->
                         <div id="all_chats" class="col-4">
-
-                            <!-- user -->
-                            <section id="user" class="d-flex flex-row justify-content-between">                                                                <div id="logo">
-                                    <img src="img/meme_bambina_bionda.png" alt="icona">
-                                    <span>Federica Elia</span>
-                                </div>
-
-                                <div class="user_buttons">
-                                    <a href="" class="gray_icons">
-                                        <i class="fa-solid fa-circle-notch"></i>
-                                    </a>
-                                    <a href="" class="gray_icons">
-                                        <i class="fa-solid fa-message"></i>
-                                    </a>
-                                    <a href="" class="gray_icons">
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>                                    </a>
-                                </div>
-                            </section>
-
-                            <!-- notifiche -->
-                            <section id="notifications" class="d-flex flex-row align-items-center">
-                                <i class="fa-solid fa-bell-slash notification_icon_background"></i>
-                                <div>
-                                    <p>Ricevi notifiche di nuovi messaggi</p>
-                                    <a href="">Attiva notifiche desktop</a>
-                                </div>
-                            </section>
-
-                            <!-- cerca -->
-                            <section id="search">
-                                <a href="" class="gray_icons">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </a>
-                                <input type="text" placeholder="Cerca o inizia una nuova chat">
-                            </section>
-
-                            <!-- elenco chat -->
-                            <section id="chat_list">
-                                <div class="chat d-flex flex-row align-items-start"
-                                v-for="(item,i) in contacts" :key="i">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <img :src="item.avatar" alt="avatar">
-                                        </div>                                        
-                                        <div>
-                                            <h5>{{item.name}}</h5>
-                                            <p>Ultimo messaggio inviato</p>
-                                        </div>
+                            <div class="row">
+                                <!-- user -->
+                                <section id="user" class="d-flex flex-row justify-content-between align-items-center">
+                                    <div id="logo">
+                                        <img class="avatar" src="img/meme_bambina_bionda.png" alt="icona">
+                                        <span>Federica Elia</span>
                                     </div>
-                                    <p>12:00</p>
-                                </div>
-                            </section>
+
+                                    <div class="user_buttons">
+                                        <a href="">
+                                            <i class="fa-solid fa-circle-notch gray_icons"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-solid fa-message gray_icons"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-solid fa-ellipsis-vertical gray_icons"></i>
+                                        </a>
+                                    </div>
+                                </section>
+
+                                <!-- notifiche -->
+                                <section id="notifications" class="d-flex flex-row align-items-center">
+                                    <i class="fa-solid fa-bell-slash notification_icon_background"></i>
+                                    <div>
+                                        <p>Ricevi notifiche di nuovi messaggi</p>
+                                        <a href="">Attiva notifiche desktop</a>
+                                    </div>
+                                </section>
+
+                                <!-- cerca -->
+                                <section id="search" class="d-flex flex-row">
+                                    <a href="">
+                                        <i class="fa-solid fa-magnifying-glass gray_icons"></i>
+                                    </a>
+                                    <input class="input_width" type="text" placeholder="Cerca o inizia una nuova chat">
+                                </section>
+
+                                <!-- elenco chat -->
+                                <section id="chat_list">
+                                    <div class="chat d-flex flex-row align-items-start justify-content-between"
+                                    v-for="(item,i) in contacts" :key="i">
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img class="avatar" :src="item.avatar" alt="avatar">
+                                            </div>                                        
+                                            <div>
+                                                <h5>{{item.name}}</h5>
+                                                <p>Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <p>12:00</p>
+                                    </div>
+                                </section>
+                            </div>                            
                         </div>
 
                         <!-- colonna dx con chat aperta -->
-                        <div id="single_chat" class="col-8"></div>
+                        <div id="single_chat" class="col-8">
+                            <div class="row">
+
+                                <!-- riga superiore info contatto -->
+                                <section id="contact" class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="d-flex flex-row">
+                                        <div>
+                                            <img class="avatar" src="img/meme_bambina_bionda.png" alt="icona">
+                                        </div>
+                                        <div class="open_chat_contact">
+                                            <p>Stefano</p>
+                                            <p>Ultimo accesso oggi alle 12:00</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="user_buttons">
+                                        <a href="" class="gray_icons">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                        <a href="" class="gray_icons">
+                                            <i class="fa-solid fa-paperclip"></i>
+                                        </a>
+                                        <a href="" class="gray_icons">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </a>
+                                    </div>
+                                </section>
+
+                                <!-- chat aperta -->
+                                <section id="open_chat">
+
+                                </section>
+
+                                <!-- riga in cui scrivere messaggio -->
+                                <section id="write" class="d-flex flex-row justify-content-between align-items-center">
+                                    <a href="">
+                                        <i class="fa-regular fa-face-smile gray_icons"></i>
+                                    </a>
+                                    <input class="input_width" type="text" placeholder="Scrivi un messaggio">
+                                    <a href="">
+                                        <i class="fa-solid fa-microphone gray_icons"></i>
+                                    </a>
+                                </section>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="col-1"></div>
