@@ -1,6 +1,7 @@
 const chats = new Vue ({
     el : "#boolzapp",
     data : {
+        activeChat : 0,
         contacts : [
             {
                 name : "Stefano",
@@ -165,7 +166,11 @@ const chats = new Vue ({
                 ] 
             }
         ]
-    }
+    },
 
-    // console.log(chats.contacts.name);
+    methods : {
+        // clickOnChat(activeChat) {
+        //     this.activeChat = activeChat;
+        // }
+    }
 });

@@ -149,6 +149,42 @@
     height: calc(100vh - 10vh - 60.5px - 50px);
 }
 
+#chat {
+    margin-top: 40px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.sent_mex {
+    background-color: #d5f9ba;
+    padding: 10px 15px 5px 15px;
+    border-radius: 12px;
+    width: 200px;
+}
+
+.sent_mex p:first-child {
+    margin-bottom: -5px;
+}
+
+.received_mex {
+    background-color: white;
+    padding: 10px 15px 5px 15px;
+    border-radius: 12px;
+    width: 200px;
+}
+
+.received_mex p:first-child {
+    margin-bottom: -5px;
+}
+
+.time {
+    font-size: 10px;
+    color: gray;
+    align-self: flex-end;
+}
+
 #write {
     padding: 10px 20px;
 }
