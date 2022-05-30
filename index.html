@@ -73,7 +73,7 @@
                                 <!-- elenco chat -->
                                 <section id="chat_list">
                                     <div class="chat d-flex flex-row align-items-start justify-content-between"
-                                    v-for="(item,i) in contacts" :key="i">
+                                    v-for="(item,i) in contacts" :key="i" @click="changeChat(i)">
                                         <div class="d-flex flex-row">
                                             <div>
                                                 <img class="avatar" :src="item.avatar" alt="avatar">
@@ -97,10 +97,10 @@
                                 <section id="contact" class="d-flex flex-row justify-content-between align-items-center">
                                     <div class="d-flex flex-row">
                                         <div>
-                                            <img class="avatar" src="img/index.png" alt="icona">
+                                            <img class="avatar" :src="contacts[activeChat].avatar" alt="icona">
                                         </div>
                                         <div class="open_chat_contact">
-                                            <p>Stefano</p>
+                                            <p>{{contacts[activeChat].name}}</p>
                                             <p>Ultimo accesso oggi alle 12:00</p>
                                         </div>
                                     </div>
@@ -125,7 +125,7 @@
 
                                         <div class="col-10">
                                             <div class="message d-flex flex-row"
-                                            v-for="(message,i) in contacts[0].messages" :key="i"
+                                            v-for="(message,i) in contacts[activeChat].messages" :key="i"
                                             :class="message.status === 'sent' ? 'justify-content-end' : 'justify-content-start' ">
                                                 <div class="d-flex flex-column"
                                                 :class="message.status === 'sent' ? 'sent_mex' : 'received_mex' ">

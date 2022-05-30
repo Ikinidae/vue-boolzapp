@@ -4,27 +4,76 @@ const chats = new Vue ({
         activeChat : 0,
         contacts : [
             {
-                name : "Stefano",
+                name : "Nelly Furtado",
                 avatar : "img/index.png",
                 visible : true,
                 messages : [
                     {
                         time : "15:30",
-                        message : "Yooooo",
+                        message : "Nellyyy",
                         status : "sent"
                     },
                     {
                         time : "15:30",
-                        message : "Come va?",
+                        message : "Che fai?",
                         status : "sent"
                     },
                     {
                         time : "15:31",
-                        message : "Oii tutto bene tu?",
+                        message : "Faccio una partita a lol, tu?",
                         status : "received"
                     },
                     {
                         time : "15:33",
+                        message : "L'esercizio :(",
+                        status : "sent"
+                    }
+                ] 
+            },
+            {
+                name : "Vasetto di Miele",
+                avatar : "img/index.png",
+                visible : true,
+                messages : [
+                    {
+                        time : "15:30",
+                        message : "Babyy",
+                        status : "received"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Vieni in ds?",
+                        status : "received"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Okii",
+                        status : "sent"
+                    },
+                ] 
+            },
+            {
+                name : "Stefano",
+                avatar : "img/index.png",
+                visible : true,
+                messages : [
+                    {
+                        time : "15:30",
+                        message : "Yooooo",
+                        status : "sent"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Come va?",
+                        status : "sent"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Oii tutto bene tu?",
+                        status : "received"
+                    },
+                    {
+                        time : "15:30",
                         message : "Tutto bene!",
                         status : "sent"
                     }
@@ -36,22 +85,22 @@ const chats = new Vue ({
                 visible : true,
                 messages : [
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Yooooo",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Come va?",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Oii tutto bene tu?",
                         status : "received"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Tutto bene!",
                         status : "sent"
                     }
@@ -63,22 +112,22 @@ const chats = new Vue ({
                 visible : true,
                 messages : [
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Yooooo",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Come va?",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Oii tutto bene tu?",
                         status : "received"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Tutto bene!",
                         status : "sent"
                     }
@@ -90,76 +139,22 @@ const chats = new Vue ({
                 visible : true,
                 messages : [
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Yooooo",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Come va?",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Oii tutto bene tu?",
                         status : "received"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
-                        message : "Tutto bene!",
-                        status : "sent"
-                    }
-                ] 
-            },
-            {
-                name : "Stefano",
-                avatar : "img/index.png",
-                visible : true,
-                messages : [
-                    {
-                        date : "31/05/2022 15:30:42",
-                        message : "Yooooo",
-                        status : "sent"
-                    },
-                    {
-                        date : "31/05/2022 15:30:42",
-                        message : "Come va?",
-                        status : "sent"
-                    },
-                    {
-                        date : "31/05/2022 15:30:42",
-                        message : "Oii tutto bene tu?",
-                        status : "received"
-                    },
-                    {
-                        date : "31/05/2022 15:30:42",
-                        message : "Tutto bene!",
-                        status : "sent"
-                    }
-                ] 
-            },
-            {
-                name : "Stefano",
-                avatar : "img/index.png",
-                visible : true,
-                messages : [
-                    {
-                        date : "31/05/2022 15:30:42",
-                        message : "Yooooo",
-                        status : "sent"
-                    },
-                    {
-                        date : "31/05/2022 15:30:42",
-                        message : "Come va?",
-                        status : "sent"
-                    },
-                    {
-                        date : "31/05/2022 15:30:42",
-                        message : "Oii tutto bene tu?",
-                        status : "received"
-                    },
-                    {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Tutto bene!",
                         status : "sent"
                     }
@@ -169,7 +164,9 @@ const chats = new Vue ({
     },
 
     methods : {
-
+        changeChat(activeChat) {
+            this.activeChat = activeChat;
+        }
     }
 });
 
