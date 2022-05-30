@@ -9,22 +9,22 @@ const chats = new Vue ({
                 visible : true,
                 messages : [
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Yooooo",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:30",
                         message : "Come va?",
                         status : "sent"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:31",
                         message : "Oii tutto bene tu?",
                         status : "received"
                     },
                     {
-                        date : "31/05/2022 15:30:42",
+                        time : "15:33",
                         message : "Tutto bene!",
                         status : "sent"
                     }
@@ -169,8 +169,8 @@ const chats = new Vue ({
     },
 
     methods : {
-        // clickOnChat(activeChat) {
-        //     this.activeChat = activeChat;
-        // }
+
     }
 });
+
+// console.log(contacts[0].messages.message);
