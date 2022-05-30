@@ -5,7 +5,7 @@ const chats = new Vue ({
         contacts : [
             {
                 name : "Nelly Furtado",
-                avatar : "img/index.png",
+                avatar : "img/Nelly.png",
                 visible : true,
                 messages : [
                     {
@@ -32,7 +32,7 @@ const chats = new Vue ({
             },
             {
                 name : "Vasetto di Miele",
-                avatar : "img/index.png",
+                avatar : "img/Vasetto_di_miele.png",
                 visible : true,
                 messages : [
                     {
@@ -53,110 +53,110 @@ const chats = new Vue ({
                 ] 
             },
             {
-                name : "Stefano",
-                avatar : "img/index.png",
+                name : "Isabella",
+                avatar : "img/Isabella.jpg",
                 visible : true,
                 messages : [
                     {
                         time : "15:30",
-                        message : "Yooooo",
+                        message : "Isinooo",
                         status : "sent"
                     },
                     {
                         time : "15:30",
-                        message : "Come va?",
+                        message : "Com'è andato l'esame?",
                         status : "sent"
                     },
                     {
                         time : "15:30",
-                        message : "Oii tutto bene tu?",
+                        message : "Non mi voglio ancora sbilanciare",
                         status : "received"
                     },
                     {
                         time : "15:30",
-                        message : "Tutto bene!",
+                        message : "Ci sta ahahahha",
                         status : "sent"
                     }
                 ] 
             },
             {
-                name : "Stefano",
-                avatar : "img/index.png",
+                name : "Chiara",
+                avatar : "img/Chiara.png",
                 visible : true,
                 messages : [
                     {
                         time : "15:30",
-                        message : "Yooooo",
-                        status : "sent"
-                    },
-                    {
-                        time : "15:30",
-                        message : "Come va?",
-                        status : "sent"
-                    },
-                    {
-                        time : "15:30",
-                        message : "Oii tutto bene tu?",
+                        message : "Oiii stase partitina a lol?",
                         status : "received"
                     },
                     {
                         time : "15:30",
-                        message : "Tutto bene!",
+                        message : "Avogliaa",
                         status : "sent"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Come procede in uni?",
+                        status : "sent"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Ora stiamo testando una dobermann!",
+                        status : "received"
+                    },
+                    {
+                        time : "15:30",
+                        message : "È stracarinaaa",
+                        status : "received"
                     }
                 ] 
             },
             {
-                name : "Stefano",
+                name : "Mamma",
                 avatar : "img/index.png",
                 visible : true,
                 messages : [
                     {
                         time : "15:30",
-                        message : "Yooooo",
-                        status : "sent"
-                    },
-                    {
-                        time : "15:30",
-                        message : "Come va?",
-                        status : "sent"
-                    },
-                    {
-                        time : "15:30",
-                        message : "Oii tutto bene tu?",
+                        message : "Ika metti l'acqua per la pasta",
                         status : "received"
                     },
                     {
                         time : "15:30",
-                        message : "Tutto bene!",
+                        message : "Sto partendo ora dal negozio",
+                        status : "received"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Vabbb",
                         status : "sent"
-                    }
+                    }                
                 ] 
             },
             {
-                name : "Stefano",
-                avatar : "img/index.png",
+                name : "Thomas",
+                avatar : "img/Thomas.png",
                 visible : true,
                 messages : [
                     {
                         time : "15:30",
-                        message : "Yooooo",
+                        message : "Giovedì sera ci sei per una partita a tennis?",
                         status : "sent"
                     },
                     {
                         time : "15:30",
-                        message : "Come va?",
-                        status : "sent"
-                    },
-                    {
-                        time : "15:30",
-                        message : "Oii tutto bene tu?",
+                        message : "Si certo, per che ora?",
                         status : "received"
                     },
                     {
                         time : "15:30",
-                        message : "Tutto bene!",
+                        message : "8.30?",
                         status : "sent"
+                    },
+                    {
+                        time : "15:30",
+                        message : "Apposto!",
+                        status : "received"
                     }
                 ] 
             }
