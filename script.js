@@ -162,12 +162,14 @@ const chats = new Vue ({
             }
         ],
         newMessage : "",
+        search : "",
     },
 
     methods : {
         changeChat(activeChat) {
             this.activeChat = activeChat;
         },
+
         addMessage() {
             const mex = {
                 time : "15:30",
@@ -186,6 +188,13 @@ const chats = new Vue ({
                 this.contacts[this.activeChat].messages.push(answer);
 
             }, 1000);
-        },
+        }
+    },
+    computed : {
+        filteredContacts: function(){
+            return this.contacts.filter((item) => {
+                return item.name.match(this.search);
+            })
+        }
     }
 });

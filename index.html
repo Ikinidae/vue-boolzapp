@@ -67,13 +67,14 @@
                                     <a href="">
                                         <i class="fa-solid fa-magnifying-glass gray_icons"></i>
                                     </a>
-                                    <input class="input_width" type="text" placeholder="Cerca o inizia una nuova chat">
+                                    <input v-model="search" id="searchbar" class="input_width" type="search"
+                                    placeholder="Cerca o inizia una nuova chat" @keyup="search">
                                 </section>
 
                                 <!-- elenco chat -->
                                 <section id="chat_list">
                                     <div class="chat d-flex flex-row align-items-start justify-content-between"
-                                    v-for="(item,i) in contacts" :key="i" @click="changeChat(i)">
+                                    v-for="(item,i) in filteredContacts" :key="i" @click="changeChat(i)">
                                         <div class="d-flex flex-row">
                                             <div>
                                                 <img class="avatar" :src="item.avatar" alt="avatar">
