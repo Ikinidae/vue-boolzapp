@@ -147,6 +147,7 @@
 #open_chat {
     background-image: url(img/background.jpg);
     height: calc(100vh - 10vh - 60.5px - 50px);
+    overflow: auto;
 }
 
 #chat {

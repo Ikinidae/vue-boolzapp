@@ -160,14 +160,32 @@ const chats = new Vue ({
                     }
                 ] 
             }
-        ]
+        ],
+        newMessage : "",
     },
 
     methods : {
         changeChat(activeChat) {
             this.activeChat = activeChat;
-        }
+        },
+        addMessage() {
+            const mex = {
+                time : "15:30",
+                message : this.newMessage,
+                status : "sent"
+            };
+            this.contacts[this.activeChat].messages.push(mex);
+            this.newMessage = "";
+
+            setTimeout(() => {
+                const answer = {
+                    time : "15:30",
+                    message : "ok",
+                    status : "received"
+                };
+                this.contacts[this.activeChat].messages.push(answer);
+
+            }, 1000);
+        },
     }
 });
-
-// console.log(contacts[0].messages.message);
